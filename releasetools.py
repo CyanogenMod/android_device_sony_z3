@@ -13,7 +13,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-"""Custom OTA Package commands for sirius"""
+"""Custom OTA Package commands for z3"""
 
 import os
 
