@@ -19,7 +19,7 @@ include device/sony/shinano-common/BoardConfigCommon.mk
 #-include vendor/sony/z3/BoardConfigVendor.mk
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := D6603,D6633,D6643,z3
+TARGET_OTA_ASSERT_DEVICE := D6602,D6603,D6633,D6643,z3
 
 TARGET_SPECIFIC_HEADER_PATH += device/sony/z3/include
 
@@ -33,6 +33,3 @@ TARGET_KERNEL_CONFIG := cm_shinano_leo_defconfig
 # Partition information
 BOARD_VOLD_MAX_PARTITIONS := 25
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 12656259072
-
-# Releasetools
-TARGET_RELEASETOOLS_EXTENSIONS := device/sony/z3
