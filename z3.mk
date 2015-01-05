@@ -35,9 +35,10 @@ PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 # Device specific init
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/init.device.rc:root/init.device.rc
-	
-# Device specific recovery
-	$(LOCAL_PATH)/recovery/root/init.recovery.device.rc:recovery/root/init.recovery.device.rc
+
+# Device specific recovery init
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/recovery/root/init.recovery.device.rc:recovery/root/init.recovery.device.rc
 
 # USB function switching
 PRODUCT_COPY_FILES += \
