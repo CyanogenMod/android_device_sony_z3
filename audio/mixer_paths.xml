@@ -589,6 +589,11 @@
         <path name="low-latency-playback incall-music" />
     </path>
 
+    <path name="low-latency-playback voice-speaker">
+        <path name="low-latency-playback speaker" />
+        <path name="low-latency-playback" />
+    </path>
+
     <path name="multi-channel-playback hdmi">
         <ctl name="HDMI Mixer MultiMedia2" value="1" />
     </path>
@@ -744,6 +749,10 @@
     <path name="voice-call speaker">
         <ctl name="QUAT_MI2S_RX_Voice Mixer CSVoice" value="1" />
         <ctl name="Voice_Tx Mixer SLIM_0_TX_Voice" value="1" />
+    </path>
+
+    <path name="voice-call voice-speaker">
+        <path name="voice-call speaker" />
     </path>
 
     <path name="voice-call handset">
@@ -1585,12 +1594,11 @@
     </path>
 
     <path name="voice-speaker">
-        <ctl name="Voice_Tx Mixer SLIM_0_TX_Voice" value="1" />
-        <ctl name="SLIM_0_RX_Voice Mixer CSVoice" value="0" />
-        <ctl name="QUAT_MI2S_RX_Voice Mixer CSVoice" value="1" />
+        <ctl name="SLIM_0_RX_Voice Mixer CSVoice" value="1" />
+        <ctl name="QUAT_MI2S_RX_Voice Mixer CSVoice" value="0" />
         <ctl name="MultiMedia1 Mixer QUAT_MI2S_TX" value="1" />
         <ctl name="TFA98XX_PARAM_TYPE" value="Speakerphone" />
-        <ctl name="TFA98XX_CHANNEL" value="Bottom" />
+        <ctl name="TFA98XX_CHANNEL" value="Both" />
         <ctl name="TFA98XX_SPKR_AMP" value="1" />
         <ctl name="VOC_EXT_EC MUX" value="QUAT_MI2S_TX" />
         <ctl name="AUDIO_EXT_EC MUX" value="QUAT_MI2S_TX" />
