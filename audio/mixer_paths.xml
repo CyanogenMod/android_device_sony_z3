@@ -342,6 +342,7 @@
 
     <!-- deep buffer playback -->
     <ctl name="Incall_Music Audio Mixer MultiMedia1" value="0" />
+    <ctl name="Incall_Music_2 Audio Mixer MultiMedia1" value="0"/>
     <!-- deep buffer playback end -->
 
     <!-- capture fm -->
@@ -588,8 +589,16 @@
         <ctl name="Incall_Music Audio Mixer MultiMedia5" value="1" />
     </path>
 
+    <path name="deep-buffer-playback incall-music2">
+        <ctl name="Incall_Music_2 Audio Mixer MultiMedia1" value="1" />
+    </path>
+
     <path name="deep-buffer-playback incall-music-bt">
         <path name="deep-buffer-playback incall-music" />
+    </path>
+
+    <path name="deep-buffer-playback incall-music2-bt">
+        <path name="deep-buffer-playback incall-music2" />
     </path>
 
     <path name="deep-buffer-playback incall-music-all-rx-mute">
@@ -1281,6 +1290,14 @@
     <path name="voice2-call usb-headphones">
         <ctl name="AFE_PCM_RX_Voice Mixer Voice2" value="1" />
         <ctl name="Voice2_Tx Mixer AFE_PCM_TX_Voice2" value="1" />
+    </path>
+
+    <path name="voice2-call incall-music2">
+        <path name="voice2-call" />
+    </path>
+
+    <path name="voice2-call incall-music2-bt">
+        <path name="voice2-call bt-sco" />
     </path>
 
     <path name="play-fm">

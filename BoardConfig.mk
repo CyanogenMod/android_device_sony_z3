@@ -38,3 +38,6 @@ BOARD_USERDATAIMAGE_PARTITION_SIZE := 12656242688 # 12656259072 - 16384
 # SELinux
 BOARD_SEPOLICY_DIRS += \
     device/sony/z3/sepolicy
+
+# Releasetools
+TARGET_RELEASETOOLS_EXTENSIONS := device/sony/z3/releasetools

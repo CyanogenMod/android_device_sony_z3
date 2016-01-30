@@ -147,6 +147,39 @@ etc/firmware/touch_module_id_0x96.img
 etc/touch_fw_update.sh
 usr/idc/clearpad.idc
 
+# DSDS
+patch/dsds/adsp.b00.p
+patch/dsds/adsp.b01.p
+patch/dsds/adsp.b03.p
+patch/dsds/adsp.b04.p
+patch/dsds/adsp.b05.p
+patch/dsds/adsp.b07.p
+patch/dsds/adsp.b08.p
+patch/dsds/adsp.b09.p
+patch/dsds/adsp.b10.p
+patch/dsds/adsp.b11.p
+patch/dsds/adsp.mdt.p
+patch/dsds/bcmdhd.cal.p
+patch/dsds/mba.b00.p
+patch/dsds/modem.b00.p
+patch/dsds/modem.b01.p
+patch/dsds/modem.b02.p
+patch/dsds/modem.b03.p
+patch/dsds/modem.b06.p
+patch/dsds/modem.b08.p
+patch/dsds/modem.b09.p
+patch/dsds/modem.b11.p
+patch/dsds/modem.b12.p
+patch/dsds/modem.b13.p
+patch/dsds/modem.b14.p
+patch/dsds/modem.b18.p
+patch/dsds/modem.b19.p
+patch/dsds/modem.b22.p
+patch/dsds/modem.b23.p
+patch/dsds/modem.b24.p
+patch/dsds/modem.b25.p
+patch/dsds/modem.mdt.p
+
 # WiFi firmware
 vendor/firmware/fw_bcmdhd_apsta.bin
 vendor/firmware/fw_bcmdhd.bin
