@@ -34,7 +34,8 @@ PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
 # Device specific init
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/rootdir/init.device.rc:root/init.device.rc
+    $(LOCAL_PATH)/rootdir/init.device.rc:root/init.device.rc \
+    $(LOCAL_PATH)/rootdir/etc/init.qcom.ril.sh:system/etc/init.qcom.ril.sh
 
 # Audio
 PRODUCT_COPY_FILES += \
